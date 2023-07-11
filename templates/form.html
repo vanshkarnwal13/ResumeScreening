@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="static/styles.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+<header>
+    <section class="nav">
+
+        <div class="logo">
+
+        </div>
+
+
+        <input id="menu-toggle" type="checkbox"/>
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+
+        <ul class="menu">
+            <li><a href="/" class="hh"><i></i>HOME </a></li>
+            <li><a href="/jobs">
+                <button class="btn">APPLY NOW</button>
+            </a></li>
+        </ul>
+    </section>
+</header>
+<div id="high" class="faculty-bck">
+    <p class="faculty-sec">FILL THE APPLICATION</p>
+    <form action="/uploader" method="POST" enctype="multipart/form-data">
+        <h2 class="ttt"> NAME: </h2>
+        <input class="tt" type="text" name="name">
+        <h2 class="ttt"> EMAIL: </h2>
+        <input class="tt" type="text" name="email">
+        <h2 class="ttt">UPLOAD RESUME</h2>
+        <input class="tt" type="file" name="resume">
+        <br><br><br>
+        <input class="btt" type="submit" name="resum"><br><br><br>
+        <textarea class="tt" name="resume"
+                  style="color: black; font-size:1.5rem;">Predicted Rating is. {{prediction}} </textarea>
+        <input hidden type="text" name="jobtitle" value="{{job_title}}"></input>
+    </form>
+</div>
+
+
+</body>
+
+</html>
